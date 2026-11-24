@@ -567,7 +567,7 @@ textarea:focus-visible,
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px 20px;
-  margin: 20px 22px 22px;
+  margin: 28px 22px 22px;
 }
 
 .form-grid .field {
@@ -657,7 +657,7 @@ textarea:focus-visible,
 
 
 .programme-level-field {
-  margin: 18px 22px 0;
+  margin: 28px 22px 0;
 }
 
 .programme-level {
@@ -937,54 +937,41 @@ body:not(:has(#step-personal input:invalid, #step-personal select:invalid, #step
   outline-offset: -3px;
 }
 
-body:not(:has(.step-panel:target)) .step-progress-link[href="#step-personal"],
 body:has(#step-personal:target) .step-progress-link[href="#step-personal"],
-body:has(#step-academic:target) .step-progress-link[href="#step-academic"],
-body:has(#step-programme:target) .step-progress-link[href="#step-programme"],
-body:has(#step-review:target) .step-progress-link[href="#step-review"],
-body:has(#step-confirmation:target) .step-progress-link[href="#step-confirmation"] {
+body:has(#step-academic:target):not(:has(#step-personal input:invalid, #step-personal select:invalid, #step-personal textarea:invalid)) .step-progress-link[href="#step-academic"],
+body:has(#step-programme:target):not(:has(#step-personal input:invalid, #step-personal select:invalid, #step-personal textarea:invalid)):not(:has(#step-academic input:invalid, #step-academic select:invalid, #step-academic textarea:invalid)) .step-progress-link[href="#step-programme"],
+body:has(#step-review:target):not(:has(#step-personal input:invalid, #step-personal select:invalid, #step-personal textarea:invalid)):not(:has(#step-academic input:invalid, #step-academic select:invalid, #step-academic textarea:invalid)):not(:has(#step-programme input:invalid, #step-programme select:invalid, #step-programme textarea:invalid)) .step-progress-link[href="#step-review"],
+body:has(#step-confirmation:target):not(:has(#step-personal input:invalid, #step-personal select:invalid, #step-personal textarea:invalid)):not(:has(#step-academic input:invalid, #step-academic select:invalid, #step-academic textarea:invalid)):not(:has(#step-programme input:invalid, #step-programme select:invalid, #step-programme textarea:invalid)) .step-progress-link[href="#step-confirmation"] {
   background: var(--soft-blue);
   color: var(--udom-navy);
 }
 
 .step-progress-number {
-  display: grid;
+  display: none;
   width: 26px;
   height: 26px;
   flex: none;
   place-items: center;
   border-radius: 50%;
-  background: #edf1f7;
-  color: var(--muted);
+  background: var(--udom-primary);
+  color: var(--white);
   font-size: 11px;
   font-weight: 800;
 }
 
-body:not(:has(.step-panel:target)) .step-progress-link[href="#step-personal"] .step-progress-number,
 body:has(#step-personal:target) .step-progress-link[href="#step-personal"] .step-progress-number,
-body:has(#step-academic:target) .step-progress-link[href="#step-academic"] .step-progress-number,
-body:has(#step-programme:target) .step-progress-link[href="#step-programme"] .step-progress-number,
-body:has(#step-review:target) .step-progress-link[href="#step-review"] .step-progress-number,
-body:has(#step-confirmation:target) .step-progress-link[href="#step-confirmation"] .step-progress-number {
-  background: var(--udom-primary);
-  color: var(--white);
-}
-
-.step-progress-title,
-.step-progress-caption {
-  display: block;
+body:has(#step-academic:target):not(:has(#step-personal input:invalid, #step-personal select:invalid, #step-personal textarea:invalid)) .step-progress-link[href="#step-academic"] .step-progress-number,
+body:has(#step-programme:target):not(:has(#step-personal input:invalid, #step-personal select:invalid, #step-personal textarea:invalid)):not(:has(#step-academic input:invalid, #step-academic select:invalid, #step-academic textarea:invalid)) .step-progress-link[href="#step-programme"] .step-progress-number,
+body:has(#step-review:target):not(:has(#step-personal input:invalid, #step-personal select:invalid, #step-personal textarea:invalid)):not(:has(#step-academic input:invalid, #step-academic select:invalid, #step-academic textarea:invalid)):not(:has(#step-programme input:invalid, #step-programme select:invalid, #step-programme textarea:invalid)) .step-progress-link[href="#step-review"] .step-progress-number,
+body:has(#step-confirmation:target):not(:has(#step-personal input:invalid, #step-personal select:invalid, #step-personal textarea:invalid)):not(:has(#step-academic input:invalid, #step-academic select:invalid, #step-academic textarea:invalid)):not(:has(#step-programme input:invalid, #step-programme select:invalid, #step-programme textarea:invalid)) .step-progress-link[href="#step-confirmation"] .step-progress-number {
+  display: grid;
 }
 
 .step-progress-title {
+  display: block;
   font-size: 12.5px;
   font-weight: 800;
   line-height: 1.3;
-}
-
-.step-progress-caption {
-  margin-top: 2px;
-  font-size: 11px;
-  font-weight: 600;
 }
 
 .step-note {
