@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <title>Massachusetts Institute of Technology | Online Application System</title>
   <meta name="description" content="Massachusetts Institute of Technology online application portal. Your academic journey starts here.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
@@ -34,10 +35,6 @@
       <div class="oas-bar">
         <div class="container oas-inner">
           <a class="oas-title" href="index.html">Online Application System</a>
-          <nav class="portal-nav" aria-label="Portal navigation">
-            <a class="active" href="index.html">Home</a>
-            <a href="application.html">Application</a>
-          </nav>
         </div>
       </div>
 
@@ -73,10 +70,10 @@
               </div>
 
               
-              <form class="auth-form" action="application.html" method="get">
+              <form class="auth-form" action="application.html#step-personal" method="get">
                 <div class="field">
                   <label for="student-id" class="form-label">Username</label>
-                  <input type="text" class="form-control" id="student-id" name="username" placeholder="Student ID or email address" required>
+                  <input type="text" class="form-control" id="student-id" placeholder="Student ID or email address" required>
                 </div>
 
                 <div class="field">
@@ -89,13 +86,13 @@
 
                 <div class="form-options d-flex justify-content-between align-items-center">
                   <label class="checkbox-label">
-                    <input type="checkbox" name="remember" checked> Remember Me
+                    <input type="checkbox" checked> Remember Me
                   </label>
                   <a class="text-link" href="mailto:admissions@mit.edu">Forgot password?</a>
                 </div>
 
                 <button type="submit" class="btn shadow-sm btn-primary btn-full">Sign In</button>
-                <a class="btn shadow-sm btn-secondary btn-full" href="register.html">Register</a>
+                <a class="btn shadow-sm btn-success btn-full" href="register.html">Register</a>
               </form>
             </div>
           </article>

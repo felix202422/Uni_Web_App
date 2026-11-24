@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <title>Application | Massachusetts Institute of Technology</title>
-  <meta name="description" content="Complete your Massachusetts Institute of Technology application: personal details, academics and programme choice.">
+  <meta name="description" content="Complete the static Massachusetts Institute of Technology application step by step in one page, without JavaScript.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -30,10 +29,6 @@
     <div class="oas-bar">
       <div class="container oas-inner">
         <a class="oas-title" href="index.html">Online Application System</a>
-        <nav class="portal-nav" aria-label="Portal navigation">
-          <a href="index.html">Home</a>
-          <a class="active" href="application.html">Application</a>
-        </nav>
       </div>
     </div>
 
@@ -47,444 +42,678 @@
     </div>
   </header>
 
-  <main class="container">
-    <section class="page-intro">
-      <h1>Massachusetts Institute of Technology Application</h1>
-    </section>
+  <main class="container portal-main">
 
-    <form action="index.html" method="get">
+    <!-- STEP 1: PERSONAL INFORMATION -->
+    <section class="step-panel" id="step-personal">
+      <section class="page-intro">
+        <h1>Application &middot; Step 1: Personal Information</h1>
+        <p class="small-note">Tell us who you are. Every field on this step is checked by your browser before you continue.</p>
+      </section>
 
-      
-      <fieldset class="form-card shadow-sm rounded-3" id="personal">
-        <legend><span class="legend-index">A</span> Personal Information</legend>
-        <div class="form-grid">
-          <div class="field">
-            <label for="full-name" class="form-label">Full Name</label>
-            <input type="text" class="form-control" id="full-name" name="full-name" placeholder="As shown on your ID">
-          </div>
-          <div class="field">
-            <label for="dob" class="form-label">Date of Birth</label>
-            <input type="date" class="form-control" id="dob" name="dob">
-          </div>
-          <div class="field">
-            <label for="app-gender" class="form-label">Gender</label>
-            <select class="form-select" id="app-gender" name="gender">
-              <option value="" disabled selected>Select gender</option>
-              <option>Female</option>
-              <option>Male</option>
-              <option>Other</option>
-              <option>Prefer not to say</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="app-nationality" class="form-label">Nationality</label>
-            <select class="form-select" id="app-nationality" name="nationality" required>
-              <option value="" disabled selected>Select nationality</option>
-              <option>Afghanistan
-              <option>Albania
-              <option>Algeria
-              <option>Andorra
-              <option>Angola
-              <option>Antigua and Barbuda
-              <option>Argentina
-              <option>Armenia
-              <option>Australia
-              <option>Austria
-              <option>Azerbaijan
-              <option>Bahamas
-              <option>Bahrain
-              <option>Bangladesh
-              <option>Barbados
-              <option>Belarus
-              <option>Belgium
-              <option>Belize
-              <option>Benin
-              <option>Bhutan
-              <option>Bolivia
-              <option>Bosnia and Herzegovina
-              <option>Botswana
-              <option>Brazil
-              <option>Brunei
-              <option>Bulgaria
-              <option>Burkina Faso
-              <option>Burundi
-              <option>Cabo Verde
-              <option>Cambodia
-              <option>Cameroon
-              <option>Canada
-              <option>Central African Republic
-              <option>Chad
-              <option>Chile
-              <option>China
-              <option>Colombia
-              <option>Comoros
-              <option>Congo, Democratic Republic of the
-              <option>Congo, Republic of the
-              <option>Costa Rica
-              <option>Croatia
-              <option>Cuba
-              <option>Cyprus
-              <option>Czechia
-              <option>Denmark
-              <option>Djibouti
-              <option>Dominica
-              <option>Dominican Republic
-              <option>Ecuador
-              <option>Egypt
-              <option>El Salvador
-              <option>Equatorial Guinea
-              <option>Eritrea
-              <option>Estonia
-              <option>Eswatini
-              <option>Ethiopia
-              <option>Fiji
-              <option>Finland
-              <option>France
-              <option>Gabon
-              <option>Gambia
-              <option>Georgia
-              <option>Germany
-              <option>Ghana
-              <option>Greece
-              <option>Grenada
-              <option>Guatemala
-              <option>Guinea
-              <option>Guinea-Bissau
-              <option>Guyana
-              <option>Haiti
-              <option>Honduras
-              <option>Hungary
-              <option>Iceland
-              <option>India
-              <option>Indonesia
-              <option>Iran
-              <option>Iraq
-              <option>Ireland
-              <option>Israel
-              <option>Italy
-              <option>Jamaica
-              <option>Japan
-              <option>Jordan
-              <option>Kazakhstan
-              <option>Kenya
-              <option>Kiribati
-              <option>Kuwait
-              <option>Kyrgyzstan
-              <option>Laos
-              <option>Latvia
-              <option>Lebanon
-              <option>Lesotho
-              <option>Liberia
-              <option>Libya
-              <option>Liechtenstein
-              <option>Lithuania
-              <option>Luxembourg
-              <option>Madagascar
-              <option>Malawi
-              <option>Malaysia
-              <option>Maldives
-              <option>Mali
-              <option>Malta
-              <option>Marshall Islands
-              <option>Mauritania
-              <option>Mauritius
-              <option>Mexico
-              <option>Micronesia
-              <option>Moldova
-              <option>Monaco
-              <option>Mongolia
-              <option>Montenegro
-              <option>Morocco
-              <option>Mozambique
-              <option>Myanmar
-              <option>Namibia
-              <option>Nauru
-              <option>Nepal
-              <option>Netherlands
-              <option>New Zealand
-              <option>Nicaragua
-              <option>Niger
-              <option>Nigeria
-              <option>North Korea
-              <option>North Macedonia
-              <option>Norway
-              <option>Oman
-              <option>Pakistan
-              <option>Palau
-              <option>Palestine
-              <option>Panama
-              <option>Papua New Guinea
-              <option>Paraguay
-              <option>Peru
-              <option>Philippines
-              <option>Poland
-              <option>Portugal
-              <option>Qatar
-              <option>Romania
-              <option>Russia
-              <option>Rwanda
-              <option>Saint Kitts and Nevis
-              <option>Saint Lucia
-              <option>Saint Vincent and the Grenadines
-              <option>Samoa
-              <option>San Marino
-              <option>Sao Tome and Principe
-              <option>Saudi Arabia
-              <option>Senegal
-              <option>Serbia
-              <option>Seychelles
-              <option>Sierra Leone
-              <option>Singapore
-              <option>Slovakia
-              <option>Slovenia
-              <option>Solomon Islands
-              <option>Somalia
-              <option>South Africa
-              <option>South Korea
-              <option>South Sudan
-              <option>Spain
-              <option>Sri Lanka
-              <option>Sudan
-              <option>Suriname
-              <option>Sweden
-              <option>Switzerland
-              <option>Syria
-              <option>Tajikistan
-              <option>Tanzania
-              <option>Thailand
-              <option>Timor-Leste
-              <option>Togo
-              <option>Tonga
-              <option>Trinidad and Tobago
-              <option>Tunisia
-              <option>Turkey
-              <option>Turkmenistan
-              <option>Tuvalu
-              <option>Uganda
-              <option>Ukraine
-              <option>United Arab Emirates
-              <option>United Kingdom
-              <option>United States
-              <option>Uruguay
-              <option>Uzbekistan
-              <option>Vanuatu
-              <option>Vatican City
-              <option>Venezuela
-              <option>Vietnam
-              <option>Yemen
-              <option>Zambia
-              <option>Zimbabwe
-              <option>Other
-            </select>
-          </div>
-          <div class="field">
-            <label for="app-email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="app-email" name="email">
-          </div>
-          <div class="field">
-            <label for="app-phone" class="form-label">Phone Number</label>
-            <input type="tel" class="form-control" id="app-phone" name="phone">
-          </div>
-          <div class="field full">
-            <label for="app-address" class="form-label">Address</label>
-            <textarea class="form-control" id="app-address" name="address"></textarea>
-          </div>
-        </div>
-      </fieldset>
+      <ol class="step-progress" aria-label="Application steps">
+        <li class="step-progress-item"><a class="step-progress-link" href="#step-personal" aria-label="Step 1: Personal Information"><span class="step-progress-number">1</span><span><span class="step-progress-title">Personal Information</span><span class="step-progress-caption">Step 1</span></span></a></li>
+        <li class="step-progress-item"><a class="step-progress-link" href="#step-academic" aria-label="Step 2: Academic Background"><span class="step-progress-number">2</span><span><span class="step-progress-title">Academic Background</span><span class="step-progress-caption">Step 2</span></span></a></li>
+        <li class="step-progress-item"><a class="step-progress-link" href="#step-programme" aria-label="Step 3: Programme Selection"><span class="step-progress-number">3</span><span><span class="step-progress-title">Programme Selection</span><span class="step-progress-caption">Step 3</span></span></a></li>
+        <li class="step-progress-item"><a class="step-progress-link" href="#step-review" aria-label="Step 4: Review"><span class="step-progress-number">4</span><span><span class="step-progress-title">Review</span><span class="step-progress-caption">Step 4</span></span></a></li>
+        <li class="step-progress-item"><a class="step-progress-link" href="#step-confirmation" aria-label="Step 5: Confirmation"><span class="step-progress-number">5</span><span><span class="step-progress-title">Confirmation</span><span class="step-progress-caption">Step 5</span></span></a></li>
+      </ol>
 
-      
-      <fieldset class="form-card shadow-sm rounded-3" id="academic">
-        <legend><span class="legend-index">B</span> Academic Background</legend>
-        <div class="form-grid">
-          <div class="field">
-            <label for="school" class="form-label">Previous School</label>
-            <input type="text" class="form-control" id="school" name="school">
-          </div>
-          <div class="field">
-            <label for="education-level" class="form-label">Education Level</label>
-            <select class="form-select" id="education-level" name="education-level">
-              <option value="" disabled selected>Select level</option>
-              <option>High School / Secondary</option>
-              <option>Diploma</option>
-              <option>Undergraduate</option>
-              <option>Postgraduate</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="exam-year" class="form-label">Examination Year</label>
-            <input type="number" class="form-control" id="exam-year" name="exam-year" min="1990" max="2030">
-          </div>
-          <div class="field">
-            <label for="certificate" class="form-label">Certificate Type</label>
-            <select class="form-select" id="certificate" name="certificate">
-              <option value="" disabled selected>Select certificate</option>
-              <option>Secondary School Certificate</option>
-              <option>Higher Secondary Certificate</option>
-              <option>International Baccalaureate</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="field full">
-            <label for="grades" class="form-label">Grade</label>
-            <input type="text" class="form-control" id="grades" name="grades">
-          </div>
-        </div>
-      </fieldset>
-
-      
-      <fieldset class="form-card shadow-sm rounded-3" id="programme">
-        <legend><span class="legend-index">C</span> Technology Programme Selection</legend>
-
-        <div class="programme-picker">
-          <div class="programme-level-field">
-            <label for="programme-level" class="form-label">Award Level</label>
-            <select class="form-select programme-level" id="programme-level" name="award-level" required>
-              <option value="" disabled selected>Select diploma or bachelor</option>
-              <option value="bachelor">Bachelor</option>
-              <option value="diploma">Diploma</option>
-            </select>
-          </div>
-
-          <p class="programme-hint">Choose an award level to see the available programmes.</p>
-
-          <div class="programme-panel" data-level="bachelor">
-            <div class="programme-grid">
-              <label class="programme-card">
-                <input type="radio" name="programme" value="btech-computer-science">
-                <span class="programme-card-body">
-                  <span class="programme-icon">CS</span>
-                  <span class="programme-name">Bachelor of Technology in Computer Science</span>
-                  <span class="programme-department">Department of Computer Science</span>
-                  <span class="programme-description">Learn programming, databases and the basics of computing systems.</span>
-                  <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
-                  <span class="select-option">Select programme</span>
-                </span>
-              </label>
-
-              <label class="programme-card">
-                <input type="radio" name="programme" value="btech-information-technology">
-                <span class="programme-card-body">
-                  <span class="programme-icon">IT</span>
-                  <span class="programme-name">Bachelor of Technology in Information Technology</span>
-                  <span class="programme-department">Department of Information Technology</span>
-                  <span class="programme-description">Study networks, databases and the tools used to manage information systems.</span>
-                  <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
-                  <span class="select-option">Select programme</span>
-                </span>
-              </label>
-
-              <label class="programme-card">
-                <input type="radio" name="programme" value="btech-software-engineering">
-                <span class="programme-card-body">
-                  <span class="programme-icon">SE</span>
-                  <span class="programme-name">Bachelor of Technology in Software Engineering</span>
-                  <span class="programme-department">Department of Software Engineering</span>
-                  <span class="programme-description">Learn how software is planned, built, tested and maintained in real projects.</span>
-                  <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
-                  <span class="select-option">Select programme</span>
-                </span>
-              </label>
-
-              <label class="programme-card">
-                <input type="radio" name="programme" value="btech-computer-engineering">
-                <span class="programme-card-body">
-                  <span class="programme-icon">CE</span>
-                  <span class="programme-name">Bachelor of Technology in Computer Engineering</span>
-                  <span class="programme-department">Department of Computer Engineering</span>
-                  <span class="programme-description">Work with computer hardware, embedded systems and the software that runs on them.</span>
-                  <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
-                  <span class="select-option">Select programme</span>
-                </span>
-              </label>
-
-              <label class="programme-card">
-                <input type="radio" name="programme" value="btech-electronics-communication">
-                <span class="programme-card-body">
-                  <span class="programme-icon">EC</span>
-                  <span class="programme-name">Bachelor of Technology in Electronics and Communication Engineering</span>
-                  <span class="programme-department">Department of Electronics and Communication Engineering</span>
-                  <span class="programme-description">Study circuits, signals and communication systems used in everyday devices.</span>
-                  <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
-                  <span class="select-option">Select programme</span>
-                </span>
-              </label>
-
-              <label class="programme-card">
-                <input type="radio" name="programme" value="btech-electrical-engineering">
-                <span class="programme-card-body">
-                  <span class="programme-icon">EE</span>
-                  <span class="programme-name">Bachelor of Technology in Electrical Engineering</span>
-                  <span class="programme-department">Department of Electrical Engineering</span>
-                  <span class="programme-description">Learn about circuits, machines, power systems and electrical design.</span>
-                  <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
-                  <span class="select-option">Select programme</span>
-                </span>
-              </label>
+      <div class="step-form">
+        <fieldset class="form-card shadow-sm rounded-3" id="personal">
+          <legend><span class="legend-index">A</span> Personal Information</legend>
+          <div class="form-grid">
+            <div class="field">
+              <label for="full-name" class="form-label">Full Name *</label>
+              <input type="text" class="form-control" id="full-name" autocomplete="name" placeholder="As shown on your ID" required>
+            </div>
+            <div class="field">
+              <label for="dob" class="form-label">Date of Birth *</label>
+              <input type="date" class="form-control" id="dob" autocomplete="bday" required>
+            </div>
+            <div class="field">
+              <label for="app-gender" class="form-label">Gender *</label>
+              <select class="form-select" id="app-gender" required>
+                <option value="" disabled selected>Select gender</option>
+                <option>Female</option>
+                <option>Male</option>
+                <option>Other</option>
+                <option>Prefer not to say</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="app-nationality" class="form-label">Nationality *</label>
+              <select class="form-select" id="app-nationality" required>
+                <option value="" disabled selected>Select nationality</option>
+                <option>Afghanistan
+                <option>Albania
+                <option>Algeria
+                <option>Andorra
+                <option>Angola
+                <option>Antigua and Barbuda
+                <option>Argentina
+                <option>Armenia
+                <option>Australia
+                <option>Austria
+                <option>Azerbaijan
+                <option>Bahamas
+                <option>Bahrain
+                <option>Bangladesh
+                <option>Barbados
+                <option>Belarus
+                <option>Belgium
+                <option>Belize
+                <option>Benin
+                <option>Bhutan
+                <option>Bolivia
+                <option>Bosnia and Herzegovina
+                <option>Botswana
+                <option>Brazil
+                <option>Brunei
+                <option>Bulgaria
+                <option>Burkina Faso
+                <option>Burundi
+                <option>Cabo Verde
+                <option>Cambodia
+                <option>Cameroon
+                <option>Canada
+                <option>Central African Republic
+                <option>Chad
+                <option>Chile
+                <option>China
+                <option>Colombia
+                <option>Comoros
+                <option>Congo, Democratic Republic of the
+                <option>Congo, Republic of the
+                <option>Costa Rica
+                <option>Croatia
+                <option>Cuba
+                <option>Cyprus
+                <option>Czechia
+                <option>Denmark
+                <option>Djibouti
+                <option>Dominica
+                <option>Dominican Republic
+                <option>Ecuador
+                <option>Egypt
+                <option>El Salvador
+                <option>Equatorial Guinea
+                <option>Eritrea
+                <option>Estonia
+                <option>Eswatini
+                <option>Ethiopia
+                <option>Fiji
+                <option>Finland
+                <option>France
+                <option>Gabon
+                <option>Gambia
+                <option>Georgia
+                <option>Germany
+                <option>Ghana
+                <option>Greece
+                <option>Grenada
+                <option>Guatemala
+                <option>Guinea
+                <option>Guinea-Bissau
+                <option>Guyana
+                <option>Haiti
+                <option>Honduras
+                <option>Hungary
+                <option>Iceland
+                <option>India
+                <option>Indonesia
+                <option>Iran
+                <option>Iraq
+                <option>Ireland
+                <option>Israel
+                <option>Italy
+                <option>Jamaica
+                <option>Japan
+                <option>Jordan
+                <option>Kazakhstan
+                <option>Kenya
+                <option>Kiribati
+                <option>Kuwait
+                <option>Kyrgyzstan
+                <option>Laos
+                <option>Latvia
+                <option>Lebanon
+                <option>Lesotho
+                <option>Liberia
+                <option>Libya
+                <option>Liechtenstein
+                <option>Lithuania
+                <option>Luxembourg
+                <option>Madagascar
+                <option>Malawi
+                <option>Malaysia
+                <option>Maldives
+                <option>Mali
+                <option>Malta
+                <option>Marshall Islands
+                <option>Mauritania
+                <option>Mauritius
+                <option>Mexico
+                <option>Micronesia
+                <option>Moldova
+                <option>Monaco
+                <option>Mongolia
+                <option>Montenegro
+                <option>Morocco
+                <option>Mozambique
+                <option>Myanmar
+                <option>Namibia
+                <option>Nauru
+                <option>Nepal
+                <option>Netherlands
+                <option>New Zealand
+                <option>Nicaragua
+                <option>Niger
+                <option>Nigeria
+                <option>North Korea
+                <option>North Macedonia
+                <option>Norway
+                <option>Oman
+                <option>Pakistan
+                <option>Palau
+                <option>Palestine
+                <option>Panama
+                <option>Papua New Guinea
+                <option>Paraguay
+                <option>Peru
+                <option>Philippines
+                <option>Poland
+                <option>Portugal
+                <option>Qatar
+                <option>Romania
+                <option>Russia
+                <option>Rwanda
+                <option>Saint Kitts and Nevis
+                <option>Saint Lucia
+                <option>Saint Vincent and the Grenadines
+                <option>Samoa
+                <option>San Marino
+                <option>Sao Tome and Principe
+                <option>Saudi Arabia
+                <option>Senegal
+                <option>Serbia
+                <option>Seychelles
+                <option>Sierra Leone
+                <option>Singapore
+                <option>Slovakia
+                <option>Slovenia
+                <option>Solomon Islands
+                <option>Somalia
+                <option>South Africa
+                <option>South Korea
+                <option>South Sudan
+                <option>Spain
+                <option>Sri Lanka
+                <option>Sudan
+                <option>Suriname
+                <option>Sweden
+                <option>Switzerland
+                <option>Syria
+                <option>Tajikistan
+                <option>Tanzania
+                <option>Thailand
+                <option>Timor-Leste
+                <option>Togo
+                <option>Tonga
+                <option>Trinidad and Tobago
+                <option>Tunisia
+                <option>Turkey
+                <option>Turkmenistan
+                <option>Tuvalu
+                <option>Uganda
+                <option>Ukraine
+                <option>United Arab Emirates
+                <option>United Kingdom
+                <option>United States
+                <option>Uruguay
+                <option>Uzbekistan
+                <option>Vanuatu
+                <option>Vatican City
+                <option>Venezuela
+                <option>Vietnam
+                <option>Yemen
+                <option>Zambia
+                <option>Zimbabwe
+                <option>Other
+              </select>
+            </div>
+            <div class="field">
+              <label for="app-email" class="form-label">Email *</label>
+              <input type="email" class="form-control" id="app-email" autocomplete="email" placeholder="name@example.com" required>
+            </div>
+            <div class="field">
+              <label for="app-phone" class="form-label">Phone Number *</label>
+              <input type="tel" class="form-control" id="app-phone" autocomplete="tel" placeholder="+00 000 0000000" required>
+            </div>
+            <div class="field full">
+              <label for="app-address" class="form-label">Address *</label>
+              <textarea class="form-control" id="app-address" autocomplete="street-address" rows="2" required></textarea>
             </div>
           </div>
+        </fieldset>
 
-          <div class="programme-panel" data-level="diploma">
-            <div class="programme-grid">
-              <label class="programme-card">
-                <input type="radio" name="programme" value="diploma-computer-science">
-                <span class="programme-card-body">
-                  <span class="programme-icon">DCS</span>
-                  <span class="programme-name">Diploma in Computer Science</span>
-                  <span class="programme-department">Department of Computer Science</span>
-                  <span class="programme-description">Learn programming, databases and basic computer systems.</span>
-                  <span class="programme-details"><span>Diploma</span><span>3 years</span></span>
-                  <span class="select-option">Select programme</span>
-                </span>
-              </label>
-
-              <label class="programme-card">
-                <input type="radio" name="programme" value="diploma-information-technology">
-                <span class="programme-card-body">
-                  <span class="programme-icon">DIT</span>
-                  <span class="programme-name">Diploma in Information Technology</span>
-                  <span class="programme-department">Department of Information Technology</span>
-                  <span class="programme-description">Study computer networks, databases and everyday IT support.</span>
-                  <span class="programme-details"><span>Diploma</span><span>3 years</span></span>
-                  <span class="select-option">Select programme</span>
-                </span>
-              </label>
-
-              <label class="programme-card">
-                <input type="radio" name="programme" value="diploma-electrical-engineering">
-                <span class="programme-card-body">
-                  <span class="programme-icon">DEE</span>
-                  <span class="programme-name">Diploma in Electrical Engineering</span>
-                  <span class="programme-department">Department of Electrical Engineering</span>
-                  <span class="programme-description">Learn wiring, circuits, machines and basic power systems.</span>
-                  <span class="programme-details"><span>Diploma</span><span>3 years</span></span>
-                  <span class="select-option">Select programme</span>
-                </span>
-              </label>
-
-              <label class="programme-card">
-                <input type="radio" name="programme" value="diploma-electronics-communication">
-                <span class="programme-card-body">
-                  <span class="programme-icon">DEC</span>
-                  <span class="programme-name">Diploma in Electronics and Communication</span>
-                  <span class="programme-department">Department of Electronics and Communication Engineering</span>
-                  <span class="programme-description">Study electronic circuits and the basics of communication systems.</span>
-                  <span class="programme-details"><span>Diploma</span><span>3 years</span></span>
-                  <span class="select-option">Select programme</span>
-                </span>
-              </label>
-            </div>
+        <div class="step-actions">
+          <a class="btn shadow-sm btn-outline-secondary" href="index.html">Cancel</a>
+          <div class="step-actions-end">
+            <a class="btn shadow-sm btn-primary continue-link" href="#step-academic">Continue to Academics &rarr;</a>
           </div>
-        </div>
-      </fieldset>
-
-      
-      <div class="form-card">
-        <div class="form-actions d-flex flex-wrap gap-2">
-          <button type="submit" class="btn shadow-sm btn-primary">Submit Application</button>
         </div>
       </div>
+    </section>
 
-    </form>
+    <!-- STEP 2: ACADEMIC BACKGROUND -->
+    <section class="step-panel" id="step-academic">
+      <section class="page-intro">
+        <h1>Application &middot; Step 2: Academic Background</h1>
+        <p class="small-note">Add your most recent school and qualification details.</p>
+      </section>
+
+      <ol class="step-progress" aria-label="Application steps">
+        <li class="step-progress-item"><a class="step-progress-link" href="#step-personal" aria-label="Step 1: Personal Information"><span class="step-progress-number">1</span><span><span class="step-progress-title">Personal Information</span><span class="step-progress-caption">Step 1</span></span></a></li>
+        <li class="step-progress-item"><a class="step-progress-link" href="#step-academic" aria-label="Step 2: Academic Background"><span class="step-progress-number">2</span><span><span class="step-progress-title">Academic Background</span><span class="step-progress-caption">Step 2</span></span></a></li>
+        <li class="step-progress-item"><a class="step-progress-link" href="#step-programme" aria-label="Step 3: Programme Selection"><span class="step-progress-number">3</span><span><span class="step-progress-title">Programme Selection</span><span class="step-progress-caption">Step 3</span></span></a></li>
+        <li class="step-progress-item"><a class="step-progress-link" href="#step-review" aria-label="Step 4: Review"><span class="step-progress-number">4</span><span><span class="step-progress-title">Review</span><span class="step-progress-caption">Step 4</span></span></a></li>
+        <li class="step-progress-item"><a class="step-progress-link" href="#step-confirmation" aria-label="Step 5: Confirmation"><span class="step-progress-number">5</span><span><span class="step-progress-title">Confirmation</span><span class="step-progress-caption">Step 5</span></span></a></li>
+      </ol>
+
+      <div class="step-form">
+        <fieldset class="form-card shadow-sm rounded-3" id="academic">
+          <legend><span class="legend-index">B</span> Academic Background</legend>
+          <div class="form-grid">
+            <div class="field">
+              <label for="school" class="form-label">Previous School *</label>
+              <input type="text" class="form-control" id="school" placeholder="Name of your most recent school" required>
+            </div>
+            <div class="field">
+              <label for="education-level" class="form-label">Education Level *</label>
+              <select class="form-select" id="education-level" required>
+                <option value="" disabled selected>Select level</option>
+                <option>High School / Secondary</option>
+                <option>Diploma</option>
+                <option>Undergraduate</option>
+                <option>Postgraduate</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="exam-year" class="form-label">Examination Year *</label>
+              <input type="number" class="form-control" id="exam-year" min="1990" max="2030" placeholder="2026" required>
+            </div>
+            <div class="field">
+              <label for="certificate" class="form-label">Certificate Type *</label>
+              <select class="form-select" id="certificate" required>
+                <option value="" disabled selected>Select certificate</option>
+                <option>Secondary School Certificate</option>
+                <option>Higher Secondary Certificate</option>
+                <option>International Baccalaureate</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="grades" class="form-label">Grade *</label>
+              <input type="text" class="form-control" id="grades" placeholder="For example, 5 credits / GPA 3.8" required>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="step-actions">
+          <a class="btn shadow-sm btn-outline-secondary" href="#step-personal">&larr; Back</a>
+          <div class="step-actions-end">
+            <a class="btn shadow-sm btn-primary continue-link" href="#step-programme">Continue to Programme &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 3: PROGRAMME SELECTION -->
+    <section class="step-panel" id="step-programme">
+      <section class="page-intro">
+        <h1>Application &middot; Step 3: Programme Selection</h1>
+        <p class="small-note">Choose an award level, then select one programme from the list that appears.</p>
+      </section>
+
+      <ol class="step-progress" aria-label="Application steps">
+        <li class="step-progress-item"><a class="step-progress-link" href="#step-personal" aria-label="Step 1: Personal Information"><span class="step-progress-number">1</span><span><span class="step-progress-title">Personal Information</span><span class="step-progress-caption">Step 1</span></span></a></li>
+        <li class="step-progress-item"><a class="step-progress-link" href="#step-academic" aria-label="Step 2: Academic Background"><span class="step-progress-number">2</span><span><span class="step-progress-title">Academic Background</span><span class="step-progress-caption">Step 2</span></span></a></li>
+        <li class="step-progress-item"><a class="step-progress-link" href="#step-programme" aria-label="Step 3: Programme Selection"><span class="step-progress-number">3</span><span><span class="step-progress-title">Programme Selection</span><span class="step-progress-caption">Step 3</span></span></a></li>
+        <li class="step-progress-item"><a class="step-progress-link" href="#step-review" aria-label="Step 4: Review"><span class="step-progress-number">4</span><span><span class="step-progress-title">Review</span><span class="step-progress-caption">Step 4</span></span></a></li>
+        <li class="step-progress-item"><a class="step-progress-link" href="#step-confirmation" aria-label="Step 5: Confirmation"><span class="step-progress-number">5</span><span><span class="step-progress-title">Confirmation</span><span class="step-progress-caption">Step 5</span></span></a></li>
+      </ol>
+
+      <p class="step-note">Answers stay in this page while it is open.</p>
+
+      <div class="step-form">
+        <fieldset class="form-card shadow-sm rounded-3" id="programme">
+          <legend><span class="legend-index">C</span> Technology Programme Selection</legend>
+
+          <div class="programme-picker">
+            <div class="programme-level-field">
+              <label for="programme-level" class="form-label">Award Level *</label>
+              <select class="form-select programme-level" id="programme-level" required>
+                <option value="" disabled selected>Select diploma or bachelor</option>
+                <option value="bachelor">Bachelor</option>
+                <option value="diploma">Diploma</option>
+              </select>
+            </div>
+
+            <p class="programme-hint">Choose an award level to see the available programmes.</p>
+
+            <div class="programme-panel" data-level="bachelor">
+              <div class="programme-grid">
+                <label class="programme-card">
+                  <input type="radio" name="programme" required value="btech-computer-science">
+                  <span class="programme-card-body">
+                    <span class="programme-icon">CS</span>
+                    <span class="programme-name">Bachelor of Technology in Computer Science</span>
+                    <span class="programme-department">Department of Computer Science</span>
+                    <span class="programme-description">Learn programming, databases and the basics of computing systems.</span>
+                    <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
+                    <span class="select-option">Select programme</span>
+                  </span>
+                </label>
+
+                <label class="programme-card">
+                  <input type="radio" name="programme" required value="btech-information-technology">
+                  <span class="programme-card-body">
+                    <span class="programme-icon">IT</span>
+                    <span class="programme-name">Bachelor of Technology in Information Technology</span>
+                    <span class="programme-department">Department of Information Technology</span>
+                    <span class="programme-description">Study networks, databases and the tools used to manage information systems.</span>
+                    <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
+                    <span class="select-option">Select programme</span>
+                  </span>
+                </label>
+
+                <label class="programme-card">
+                  <input type="radio" name="programme" required value="btech-software-engineering">
+                  <span class="programme-card-body">
+                    <span class="programme-icon">SE</span>
+                    <span class="programme-name">Bachelor of Technology in Software Engineering</span>
+                    <span class="programme-department">Department of Software Engineering</span>
+                    <span class="programme-description">Learn how software is planned, built, tested and maintained in real projects.</span>
+                    <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
+                    <span class="select-option">Select programme</span>
+                  </span>
+                </label>
+
+                <label class="programme-card">
+                  <input type="radio" name="programme" required value="btech-computer-engineering">
+                  <span class="programme-card-body">
+                    <span class="programme-icon">CE</span>
+                    <span class="programme-name">Bachelor of Technology in Computer Engineering</span>
+                    <span class="programme-department">Department of Computer Engineering</span>
+                    <span class="programme-description">Work with computer hardware, embedded systems and the software that runs on them.</span>
+                    <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
+                    <span class="select-option">Select programme</span>
+                  </span>
+                </label>
+
+                <label class="programme-card">
+                  <input type="radio" name="programme" required value="btech-electronics-communication">
+                  <span class="programme-card-body">
+                    <span class="programme-icon">EC</span>
+                    <span class="programme-name">Bachelor of Technology in Electronics and Communication Engineering</span>
+                    <span class="programme-department">Department of Electronics and Communication Engineering</span>
+                    <span class="programme-description">Study circuits, signals and communication systems used in everyday devices.</span>
+                    <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
+                    <span class="select-option">Select programme</span>
+                  </span>
+                </label>
+
+                <label class="programme-card">
+                  <input type="radio" name="programme" required value="btech-electrical-engineering">
+                  <span class="programme-card-body">
+                    <span class="programme-icon">EE</span>
+                    <span class="programme-name">Bachelor of Technology in Electrical Engineering</span>
+                    <span class="programme-department">Department of Electrical Engineering</span>
+                    <span class="programme-description">Learn about circuits, machines, power systems and electrical design.</span>
+                    <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
+                    <span class="select-option">Select programme</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="programme-panel" data-level="diploma">
+              <div class="programme-grid">
+                <label class="programme-card">
+                  <input type="radio" name="programme" required value="diploma-computer-science">
+                  <span class="programme-card-body">
+                    <span class="programme-icon">DCS</span>
+                    <span class="programme-name">Diploma in Computer Science</span>
+                    <span class="programme-department">Department of Computer Science</span>
+                    <span class="programme-description">Learn programming, databases and basic computer systems.</span>
+                    <span class="programme-details"><span>Diploma</span><span>3 years</span></span>
+                    <span class="select-option">Select programme</span>
+                  </span>
+                </label>
+
+                <label class="programme-card">
+                  <input type="radio" name="programme" required value="diploma-information-technology">
+                  <span class="programme-card-body">
+                    <span class="programme-icon">DIT</span>
+                    <span class="programme-name">Diploma in Information Technology</span>
+                    <span class="programme-department">Department of Information Technology</span>
+                    <span class="programme-description">Study computer networks, databases and everyday IT support.</span>
+                    <span class="programme-details"><span>Diploma</span><span>3 years</span></span>
+                    <span class="select-option">Select programme</span>
+                  </span>
+                </label>
+
+                <label class="programme-card">
+                  <input type="radio" name="programme" required value="diploma-electrical-engineering">
+                  <span class="programme-card-body">
+                    <span class="programme-icon">DEE</span>
+                    <span class="programme-name">Diploma in Electrical Engineering</span>
+                    <span class="programme-department">Department of Electrical Engineering</span>
+                    <span class="programme-description">Learn wiring, circuits, machines and basic power systems.</span>
+                    <span class="programme-details"><span>Diploma</span><span>3 years</span></span>
+                    <span class="select-option">Select programme</span>
+                  </span>
+                </label>
+
+                <label class="programme-card">
+                  <input type="radio" name="programme" required value="diploma-electronics-communication">
+                  <span class="programme-card-body">
+                    <span class="programme-icon">DEC</span>
+                    <span class="programme-name">Diploma in Electronics and Communication</span>
+                    <span class="programme-department">Department of Electronics and Communication Engineering</span>
+                    <span class="programme-description">Study electronic circuits and the basics of communication systems.</span>
+                    <span class="programme-details"><span>Diploma</span><span>3 years</span></span>
+                    <span class="select-option">Select programme</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="step-actions">
+          <a class="btn shadow-sm btn-outline-secondary" href="#step-academic">&larr; Back</a>
+          <div class="step-actions-end">
+            <a class="btn shadow-sm btn-primary continue-link" href="#step-review">Continue to Review &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 4: REVIEW -->
+    <section class="step-panel" id="step-review">
+      <section class="page-intro">
+        <h1>Application &middot; Step 4: Review</h1>
+        <p class="small-note">Check the state of this static application flow before the final step.</p>
+      </section>
+
+      <ol class="step-progress" aria-label="Application steps">
+        <li class="step-progress-item"><a class="step-progress-link" href="#step-personal" aria-label="Step 1: Personal Information"><span class="step-progress-number">1</span><span><span class="step-progress-title">Personal Information</span><span class="step-progress-caption">Step 1</span></span></a></li>
+        <li class="step-progress-item"><a class="step-progress-link" href="#step-academic" aria-label="Step 2: Academic Background"><span class="step-progress-number">2</span><span><span class="step-progress-title">Academic Background</span><span class="step-progress-caption">Step 2</span></span></a></li>
+        <li class="step-progress-item"><a class="step-progress-link" href="#step-programme" aria-label="Step 3: Programme Selection"><span class="step-progress-number">3</span><span><span class="step-progress-title">Programme Selection</span><span class="step-progress-caption">Step 3</span></span></a></li>
+        <li class="step-progress-item"><a class="step-progress-link" href="#step-review" aria-label="Step 4: Review"><span class="step-progress-number">4</span><span><span class="step-progress-title">Review</span><span class="step-progress-caption">Step 4</span></span></a></li>
+        <li class="step-progress-item"><a class="step-progress-link" href="#step-confirmation" aria-label="Step 5: Confirmation"><span class="step-progress-number">5</span><span><span class="step-progress-title">Confirmation</span><span class="step-progress-caption">Step 5</span></span></a></li>
+      </ol>
+
+      <p class="step-note">Use Back to revisit a step and change an answer. This review cannot display your earlier values together.</p>
+
+      <section class="review-card" aria-labelledby="review-heading">
+        <div class="review-card-header" id="review-heading">Static Flow Status</div>
+
+        <div class="review-row">
+          <div class="review-label">Personal Information</div>
+          <div class="review-value">Completed on Step 1 in your browser, but this page cannot read the entered values back.</div>
+          <b class="status-pill status-pending review-status">NEEDS VERIFICATION</b>
+        </div>
+
+        <div class="review-row">
+          <div class="review-label">Academic Background</div>
+          <div class="review-value">Completed on Step 2 in your browser, but this page cannot read the entered values back.</div>
+          <b class="status-pill status-pending review-status">NEEDS VERIFICATION</b>
+        </div>
+
+        <div class="review-row">
+          <div class="review-label">Programme Selection</div>
+          <div class="review-value">A programme was chosen on Step 3. Without storage, this page cannot display which one.</div>
+          <b class="status-pill status-pending review-status">NEEDS VERIFICATION</b>
+        </div>
+
+        <div class="review-row">
+          <div class="review-label">Submission Record</div>
+          <div class="review-value">No application was submitted. There is no backend, database or account system in this demo.</div>
+          <b class="status-pill status-missing review-status">MISSING</b>
+        </div>
+
+        <div class="review-row">
+          <div class="review-label">Reference Number</div>
+          <div class="review-value">No reference number was issued. Any number shown outside this demo would not be an official record.</div>
+          <b class="status-pill status-missing review-status">MISSING</b>
+        </div>
+      </section>
+
+      <div class="step-actions">
+        <a class="btn shadow-sm btn-outline-secondary" href="#step-programme">&larr; Back</a>
+        <div class="step-actions-end">
+          <a class="btn shadow-sm btn-primary continue-link" href="#step-confirmation">Continue to Confirmation &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 5: CONFIRMATION -->
+    <section class="step-panel" id="step-confirmation">
+      <section class="page-intro">
+        <h1>Application &middot; Step 5: Confirmation</h1>
+        <p class="small-note">You have reached the end of the no-JavaScript step flow.</p>
+      </section>
+
+      <ol class="step-progress" aria-label="Application steps">
+        <li class="step-progress-item"><a class="step-progress-link" href="#step-personal" aria-label="Step 1: Personal Information"><span class="step-progress-number">1</span><span><span class="step-progress-title">Personal Information</span><span class="step-progress-caption">Step 1</span></span></a></li>
+        <li class="step-progress-item"><a class="step-progress-link" href="#step-academic" aria-label="Step 2: Academic Background"><span class="step-progress-number">2</span><span><span class="step-progress-title">Academic Background</span><span class="step-progress-caption">Step 2</span></span></a></li>
+        <li class="step-progress-item"><a class="step-progress-link" href="#step-programme" aria-label="Step 3: Programme Selection"><span class="step-progress-number">3</span><span><span class="step-progress-title">Programme Selection</span><span class="step-progress-caption">Step 3</span></span></a></li>
+        <li class="step-progress-item"><a class="step-progress-link" href="#step-review" aria-label="Step 4: Review"><span class="step-progress-number">4</span><span><span class="step-progress-title">Review</span><span class="step-progress-caption">Step 4</span></span></a></li>
+        <li class="step-progress-item"><a class="step-progress-link" href="#step-confirmation" aria-label="Step 5: Confirmation"><span class="step-progress-number">5</span><span><span class="step-progress-title">Confirmation</span><span class="step-progress-caption">Step 5</span></span></a></li>
+      </ol>
+
+      <p class="step-note">This page confirms only that you followed the demo pages. It is not a receipt and is not proof of submission.</p>
+
+      <section class="review-card" aria-labelledby="confirmation-heading">
+        <div class="review-card-header" id="confirmation-heading">Final Status</div>
+
+        <div class="review-row">
+          <div class="review-label">Answers</div>
+          <div class="review-value">Earlier answers were checked by your browser, but this static flow could not save or display them together.</div>
+          <b class="status-pill status-pending review-status">NEEDS VERIFICATION</b>
+        </div>
+
+        <div class="review-row">
+          <div class="review-label">Application Submitted</div>
+          <div class="review-value">No application was submitted. Continuing only opened the next static HTML page.</div>
+          <b class="status-pill status-missing review-status">MISSING</b>
+        </div>
+
+        <div class="review-row">
+          <div class="review-label">Reference Number</div>
+          <div class="review-value">No reference number was generated. Do not treat any number from this demo as an official record.</div>
+          <b class="status-pill status-missing review-status">MISSING</b>
+        </div>
+
+        <div class="review-row">
+          <div class="review-label">Saved Record</div>
+          <div class="review-value">No draft, account or application record was stored anywhere.</div>
+          <b class="status-pill status-missing review-status">MISSING</b>
+        </div>
+      </section>
+
+      <div class="step-actions">
+        <a class="btn shadow-sm btn-outline-secondary" href="#step-review">&larr; Back to Review</a>
+        <div class="step-actions-end">
+          <a class="btn shadow-sm btn-outline-secondary" href="#step-personal">Edit Step 1</a>
+          <a class="btn shadow-sm btn-primary" href="index.html">Return Home</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP LOCK -->
+    <section class="locked-panel" id="step-locked">
+      <section class="page-intro">
+        <h1>Application &middot; Step Locked</h1>
+        <p class="small-note">Complete the earlier steps before opening this one.</p>
+      </section>
+
+      <p class="step-note">At least one required field is still incomplete. Go back and finish it before continuing.</p>
+
+      <section class="review-card" aria-labelledby="locked-heading">
+        <div class="review-card-header" id="locked-heading">Step Access</div>
+
+        <div class="review-row">
+          <div class="review-label">Previous Steps</div>
+          <div class="review-value">The earlier answers must pass the browser's required-field checks before the next step unlocks.</div>
+          <b class="status-pill status-pending review-status">NEEDS VERIFICATION</b>
+        </div>
+      </section>
+
+      <div class="step-actions">
+        <a class="btn shadow-sm btn-outline-secondary" href="index.html#login-card">Back to Login</a>
+        <div class="step-actions-end">
+          <a class="btn shadow-sm btn-primary" href="#step-personal">Go to Step 1</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGN-IN GATE -->
+    <section class="gate-panel" id="login-required">
+      <section class="page-intro">
+        <h1>Application &middot; Sign In Required</h1>
+        <p class="small-note">Use Sign In on the home page before opening the application steps.</p>
+      </section>
+
+      <p class="step-note">No account is checked by this page; the Sign In button simply opens Step 1.</p>
+
+      <section class="review-card" aria-labelledby="gate-heading">
+        <div class="review-card-header" id="gate-heading">Access Status</div>
+
+        <div class="review-row">
+          <div class="review-label">Login Check</div>
+          <div class="review-value">No login was performed for this page. The application steps stay hidden until the demo Sign In action is used.</div>
+          <b class="status-pill status-pending review-status">NEEDS VERIFICATION</b>
+        </div>
+
+        <div class="review-row">
+          <div class="review-label">Real Authentication</div>
+          <div class="review-value">No account system exists in this static site, so this gate cannot protect private information.</div>
+          <b class="status-pill status-missing review-status">MISSING</b>
+        </div>
+      </section>
+
+      <div class="step-actions">
+        <a class="btn shadow-sm btn-outline-secondary" href="index.html#login-card">Back to Login</a>
+        <div class="step-actions-end">
+          <a class="btn shadow-sm btn-primary" href="index.html#login-card">Go to Sign In</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="portal-footer">
