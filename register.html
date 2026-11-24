@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | Massachusetts Institute of Technology</title>
+  <meta name="description" content="Create a Massachusetts Institute of Technology student account to begin your application.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="portal-header">
+    <div class="masthead">
+      <div class="container masthead-inner">
+        <div class="institution">
+          <p class="institution-kicker">OFFICE OF ADMISSIONS</p>
+          <p class="institution-name">Massachusetts Institute of Technology</p>
+          <p class="institution-motto">Your Academic Journey Starts Here.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="oas-bar">
+      <div class="container oas-inner">
+        <a class="oas-title" href="index.html">Online Application System</a>
+        <nav class="portal-nav" aria-label="Portal navigation">
+          <a href="index.html">Home</a>
+          <a href="application.html">Application</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="ticker" aria-label="Admission window information">
+      <div class="ticker-label"><span class="ticker-dot"></span>Admission Window</div>
+      <marquee class="ticker-marquee" behavior="scroll" direction="left" scrollamount="6" scrolldelay="20">
+        <span class="ticker-item"><b class="status-pill status-open">Open</b> Undergraduate &middot; Round 12 &middot; Closes 12 Dec 2026</span>
+        <span class="ticker-item"><b class="status-pill status-open">Open</b> Postgraduate &middot; Round 04 &middot; Closes 20 Dec 2026</span>
+        <span class="ticker-item"><b class="status-pill status-closed">Closed</b> Diploma &middot; Round 03 &middot; Closed 30 Nov 2026</span>
+      </marquee>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-intro">
+      <h1>Student Registration</h1>
+      <p>Fill in your details to start an application. Fields marked with an asterisk are required.</p>
+    </section>
+
+    <div class="applicant-tabs" aria-label="Applicant category">
+      <span class="active">Tanzanian Applicant</span>
+    </div>
+    
+    <form action="application.html" method="get">
+
+      <fieldset class="form-card shadow-sm rounded-3">
+        <legend><span class="legend-index">01</span> Personal Details</legend>
+        <div class="form-grid">
+          <div class="field">
+            <label for="first-name" class="form-label">First Name *</label>
+            <input type="text" class="form-control" id="first-name" name="first-name" placeholder="Your first name" required>
+          </div>
+          <div class="field">
+            <label for="middle-name" class="form-label">Middle Name</label>
+            <input type="text" class="form-control" id="middle-name" name="middle-name" placeholder="Optional">
+          </div>
+          <div class="field">
+            <label for="last-name" class="form-label">Last Name *</label>
+            <input type="text" class="form-control" id="last-name" name="last-name" placeholder="Your last name" required>
+          </div>
+          <div class="field">
+            <label for="birth-date" class="form-label">Date of Birth *</label>
+            <input type="date" class="form-control" id="birth-date" name="birth-date" required>
+          </div>
+          <div class="field">
+            <label for="gender" class="form-label">Gender *</label>
+            <select class="form-select" id="gender" name="gender" required>
+              <option value="" selected disabled>Select gender</option>
+              <option>Female</option>
+              <option>Male</option>
+              <option>Other</option>
+              <option>Prefer not to say</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="nationality" class="form-label">Nationality *</label>
+            <select class="form-select" id="nationality" name="nationality" required>
+              <option value="" disabled selected>Select nationality</option>
+              <option>Afghanistan
+              <option>Albania
+              <option>Algeria
+              <option>Andorra
+              <option>Angola
+              <option>Antigua and Barbuda
+              <option>Argentina
+              <option>Armenia
+              <option>Australia
+              <option>Austria
+              <option>Azerbaijan
+              <option>Bahamas
+              <option>Bahrain
+              <option>Bangladesh
+              <option>Barbados
+              <option>Belarus
+              <option>Belgium
+              <option>Belize
+              <option>Benin
+              <option>Bhutan
+              <option>Bolivia
+              <option>Bosnia and Herzegovina
+              <option>Botswana
+              <option>Brazil
+              <option>Brunei
+              <option>Bulgaria
+              <option>Burkina Faso
+              <option>Burundi
+              <option>Cabo Verde
+              <option>Cambodia
+              <option>Cameroon
+              <option>Canada
+              <option>Central African Republic
+              <option>Chad
+              <option>Chile
+              <option>China
+              <option>Colombia
+              <option>Comoros
+              <option>Congo, Democratic Republic of the
+              <option>Congo, Republic of the
+              <option>Costa Rica
+              <option>Croatia
+              <option>Cuba
+              <option>Cyprus
+              <option>Czechia
+              <option>Denmark
+              <option>Djibouti
+              <option>Dominica
+              <option>Dominican Republic
+              <option>Ecuador
+              <option>Egypt
+              <option>El Salvador
+              <option>Equatorial Guinea
+              <option>Eritrea
+              <option>Estonia
+              <option>Eswatini
+              <option>Ethiopia
+              <option>Fiji
+              <option>Finland
+              <option>France
+              <option>Gabon
+              <option>Gambia
+              <option>Georgia
+              <option>Germany
+              <option>Ghana
+              <option>Greece
+              <option>Grenada
+              <option>Guatemala
+              <option>Guinea
+              <option>Guinea-Bissau
+              <option>Guyana
+              <option>Haiti
+              <option>Honduras
+              <option>Hungary
+              <option>Iceland
+              <option>India
+              <option>Indonesia
+              <option>Iran
+              <option>Iraq
+              <option>Ireland
+              <option>Israel
+              <option>Italy
+              <option>Jamaica
+              <option>Japan
+              <option>Jordan
+              <option>Kazakhstan
+              <option>Kenya
+              <option>Kiribati
+              <option>Kuwait
+              <option>Kyrgyzstan
+              <option>Laos
+              <option>Latvia
+              <option>Lebanon
+              <option>Lesotho
+              <option>Liberia
+              <option>Libya
+              <option>Liechtenstein
+              <option>Lithuania
+              <option>Luxembourg
+              <option>Madagascar
+              <option>Malawi
+              <option>Malaysia
+              <option>Maldives
+              <option>Mali
+              <option>Malta
+              <option>Marshall Islands
+              <option>Mauritania
+              <option>Mauritius
+              <option>Mexico
+              <option>Micronesia
+              <option>Moldova
+              <option>Monaco
+              <option>Mongolia
+              <option>Montenegro
+              <option>Morocco
+              <option>Mozambique
+              <option>Myanmar
+              <option>Namibia
+              <option>Nauru
+              <option>Nepal
+              <option>Netherlands
+              <option>New Zealand
+              <option>Nicaragua
+              <option>Niger
+              <option>Nigeria
+              <option>North Korea
+              <option>North Macedonia
+              <option>Norway
+              <option>Oman
+              <option>Pakistan
+              <option>Palau
+              <option>Palestine
+              <option>Panama
+              <option>Papua New Guinea
+              <option>Paraguay
+              <option>Peru
+              <option>Philippines
+              <option>Poland
+              <option>Portugal
+              <option>Qatar
+              <option>Romania
+              <option>Russia
+              <option>Rwanda
+              <option>Saint Kitts and Nevis
+              <option>Saint Lucia
+              <option>Saint Vincent and the Grenadines
+              <option>Samoa
+              <option>San Marino
+              <option>Sao Tome and Principe
+              <option>Saudi Arabia
+              <option>Senegal
+              <option>Serbia
+              <option>Seychelles
+              <option>Sierra Leone
+              <option>Singapore
+              <option>Slovakia
+              <option>Slovenia
+              <option>Solomon Islands
+              <option>Somalia
+              <option>South Africa
+              <option>South Korea
+              <option>South Sudan
+              <option>Spain
+              <option>Sri Lanka
+              <option>Sudan
+              <option>Suriname
+              <option>Sweden
+              <option>Switzerland
+              <option>Syria
+              <option>Tajikistan
+              <option>Tanzania
+              <option>Thailand
+              <option>Timor-Leste
+              <option>Togo
+              <option>Tonga
+              <option>Trinidad and Tobago
+              <option>Tunisia
+              <option>Turkey
+              <option>Turkmenistan
+              <option>Tuvalu
+              <option>Uganda
+              <option>Ukraine
+              <option>United Arab Emirates
+              <option>United Kingdom
+              <option>United States
+              <option>Uruguay
+              <option>Uzbekistan
+              <option>Vanuatu
+              <option>Vatican City
+              <option>Venezuela
+              <option>Vietnam
+              <option>Yemen
+              <option>Zambia
+              <option>Zimbabwe
+              <option>Other
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-card shadow-sm rounded-3">
+        <legend><span class="legend-index">02</span> Contact Information</legend>
+        <div class="form-grid">
+          <div class="field">
+            <label for="email" class="form-label">Email Address *</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+          </div>
+          <div class="field">
+            <label for="phone" class="form-label">Phone Number *</label>
+            <input type="tel" class="form-control" id="phone" name="phone" placeholder="+00 000 0000000" required>
+          </div>
+          <div class="field full">
+            <label for="address" class="form-label">Residential Address *</label>
+            <textarea class="form-control" id="address" name="address" placeholder="House, street, city and country" required></textarea>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-card shadow-sm rounded-3">
+        <legend><span class="legend-index">03</span> Account Information</legend>
+        <div class="form-grid">
+          <div class="field">
+            <label for="new-password" class="form-label">Create Password *</label>
+            <input type="password" class="form-control" id="new-password" placeholder="At least 8 characters" minlength="8" required>
+            <p class="small-note">Use at least 8 characters.</p>
+          </div>
+          <div class="field">
+            <label for="confirm-password" class="form-label">Confirm Password *</label>
+            <input type="password" class="form-control" id="confirm-password" placeholder="Repeat your password" required>
+            <p class="small-note">Must match the password above.</p>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="form-card">
+        <label class="checkbox-label">
+          <input type="checkbox" name="terms" required>
+          I agree to the Terms and Conditions and the privacy notice.
+        </label>
+        <div class="form-actions d-flex flex-wrap gap-2">
+          <button type="submit" class="btn shadow-sm btn-primary">Create Account</button>
+          <a class="text-link" href="index.html">Already registered? Back to login</a>
+        </div>
+      </div>
+
+    </form>
+  </main>
+
+  <footer class="portal-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Massachusetts Institute of Technology. All rights reserved.</p>
+      <p>Your Academic Journey Starts Here.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

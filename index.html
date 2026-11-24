@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Massachusetts Institute of Technology | Online Application System</title>
+  <meta name="description" content="Massachusetts Institute of Technology online application portal. Your academic journey starts here.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+  <div class="portal-shell">
+
+    
+    <header class="portal-header">
+      <div class="masthead">
+        <div class="container masthead-inner">
+
+          <div class="institution">
+            <p class="institution-kicker">OFFICE OF ADMISSIONS</p>
+            <p class="institution-name">Massachusetts Institute of Technology</p>
+            <p class="institution-motto">Your Academic Journey Starts Here.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="oas-bar">
+        <div class="container oas-inner">
+          <a class="oas-title" href="index.html">Online Application System</a>
+          <nav class="portal-nav" aria-label="Portal navigation">
+            <a class="active" href="index.html">Home</a>
+            <a href="application.html">Application</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="ticker" aria-label="Admission window information">
+        <div class="ticker-label"><span class="ticker-dot"></span>Admission Window</div>
+        <marquee class="ticker-marquee" behavior="scroll" direction="left" scrollamount="6" scrolldelay="20">
+          <span class="ticker-item"><b class="status-pill status-open">Open</b> Undergraduate &middot; Round 12 &middot; Closes 12 Dec 2026</span>
+          <span class="ticker-item"><b class="status-pill status-open">Open</b> Postgraduate &middot; Round 04 &middot; Closes 20 Dec 2026</span>
+          <span class="ticker-item"><b class="status-pill status-closed">Closed</b> Diploma &middot; Round 03 &middot; Closed 30 Nov 2026</span>
+        </marquee>
+      </div>
+    </header>
+
+    <main class="portal-main">
+      <div class="container">
+
+        
+        <section class="admission-section" id="admission-info" aria-labelledby="admission-title">
+          <div class="page-heading text-center">
+            <div>
+              <h1 id="admission-title">Welcome to Massachusetts Institute of Technology Online Admissions</h1>
+            </div>
+          </div>
+        </section>
+
+        
+        <section class="login-wrap" id="login-card" aria-labelledby="login-title">
+          <article class="portal-card login-card card shadow-sm border-0">
+            <div class="card-body p-4">
+              <div class="login-intro">
+                <h2 id="login-title">Welcome Back</h2>
+                <p class="section-description">Sign in to your account</p>
+              </div>
+
+              
+              <form class="auth-form" action="application.html" method="get">
+                <div class="field">
+                  <label for="student-id" class="form-label">Username</label>
+                  <input type="text" class="form-control" id="student-id" name="username" placeholder="Student ID or email address" required>
+                </div>
+
+                <div class="field">
+                  <label for="password" class="form-label">Password</label>
+                  <div class="input-with-icon">
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                    <span class="input-icon" aria-hidden="true"><i class="fa-solid fa-eye"></i></span>
+                  </div>
+                </div>
+
+                <div class="form-options d-flex justify-content-between align-items-center">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="remember" checked> Remember Me
+                  </label>
+                  <a class="text-link" href="mailto:admissions@mit.edu">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="btn shadow-sm btn-primary btn-full">Sign In</button>
+                <a class="btn shadow-sm btn-secondary btn-full" href="register.html">Register</a>
+              </form>
+            </div>
+          </article>
+        </section>
+
+        
+
+      </div>
+    </main>
+
+    <footer class="portal-footer">
+      <div class="container footer-inner">
+        <p>&copy; 2026 Massachusetts Institute of Technology. All rights reserved.</p>
+        <p>Your Academic Journey Starts Here.</p>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>

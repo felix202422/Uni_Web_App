@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application | Massachusetts Institute of Technology</title>
+  <meta name="description" content="Complete your Massachusetts Institute of Technology application: personal details, academics and programme choice.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="portal-header">
+    <div class="masthead">
+      <div class="container masthead-inner">
+        <div class="institution">
+          <p class="institution-kicker">OFFICE OF ADMISSIONS</p>
+          <p class="institution-name">Massachusetts Institute of Technology</p>
+          <p class="institution-motto">Your Academic Journey Starts Here.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="oas-bar">
+      <div class="container oas-inner">
+        <a class="oas-title" href="index.html">Online Application System</a>
+        <nav class="portal-nav" aria-label="Portal navigation">
+          <a href="index.html">Home</a>
+          <a class="active" href="application.html">Application</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="ticker" aria-label="Admission window information">
+      <div class="ticker-label"><span class="ticker-dot"></span>Admission Window</div>
+      <marquee class="ticker-marquee" behavior="scroll" direction="left" scrollamount="6" scrolldelay="20">
+        <span class="ticker-item"><b class="status-pill status-open">Open</b> Undergraduate &middot; Round 12 &middot; Closes 12 Dec 2026</span>
+        <span class="ticker-item"><b class="status-pill status-open">Open</b> Postgraduate &middot; Round 04 &middot; Closes 20 Dec 2026</span>
+        <span class="ticker-item"><b class="status-pill status-closed">Closed</b> Diploma &middot; Round 03 &middot; Closed 30 Nov 2026</span>
+      </marquee>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-intro">
+      <h1>Massachusetts Institute of Technology Application</h1>
+    </section>
+
+    <form action="index.html" method="get">
+
+      
+      <fieldset class="form-card shadow-sm rounded-3" id="personal">
+        <legend><span class="legend-index">A</span> Personal Information</legend>
+        <div class="form-grid">
+          <div class="field">
+            <label for="full-name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="full-name" name="full-name" placeholder="As shown on your ID">
+          </div>
+          <div class="field">
+            <label for="dob" class="form-label">Date of Birth</label>
+            <input type="date" class="form-control" id="dob" name="dob">
+          </div>
+          <div class="field">
+            <label for="app-gender" class="form-label">Gender</label>
+            <select class="form-select" id="app-gender" name="gender">
+              <option value="" disabled selected>Select gender</option>
+              <option>Female</option>
+              <option>Male</option>
+              <option>Other</option>
+              <option>Prefer not to say</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="app-nationality" class="form-label">Nationality</label>
+            <select class="form-select" id="app-nationality" name="nationality" required>
+              <option value="" disabled selected>Select nationality</option>
+              <option>Afghanistan
+              <option>Albania
+              <option>Algeria
+              <option>Andorra
+              <option>Angola
+              <option>Antigua and Barbuda
+              <option>Argentina
+              <option>Armenia
+              <option>Australia
+              <option>Austria
+              <option>Azerbaijan
+              <option>Bahamas
+              <option>Bahrain
+              <option>Bangladesh
+              <option>Barbados
+              <option>Belarus
+              <option>Belgium
+              <option>Belize
+              <option>Benin
+              <option>Bhutan
+              <option>Bolivia
+              <option>Bosnia and Herzegovina
+              <option>Botswana
+              <option>Brazil
+              <option>Brunei
+              <option>Bulgaria
+              <option>Burkina Faso
+              <option>Burundi
+              <option>Cabo Verde
+              <option>Cambodia
+              <option>Cameroon
+              <option>Canada
+              <option>Central African Republic
+              <option>Chad
+              <option>Chile
+              <option>China
+              <option>Colombia
+              <option>Comoros
+              <option>Congo, Democratic Republic of the
+              <option>Congo, Republic of the
+              <option>Costa Rica
+              <option>Croatia
+              <option>Cuba
+              <option>Cyprus
+              <option>Czechia
+              <option>Denmark
+              <option>Djibouti
+              <option>Dominica
+              <option>Dominican Republic
+              <option>Ecuador
+              <option>Egypt
+              <option>El Salvador
+              <option>Equatorial Guinea
+              <option>Eritrea
+              <option>Estonia
+              <option>Eswatini
+              <option>Ethiopia
+              <option>Fiji
+              <option>Finland
+              <option>France
+              <option>Gabon
+              <option>Gambia
+              <option>Georgia
+              <option>Germany
+              <option>Ghana
+              <option>Greece
+              <option>Grenada
+              <option>Guatemala
+              <option>Guinea
+              <option>Guinea-Bissau
+              <option>Guyana
+              <option>Haiti
+              <option>Honduras
+              <option>Hungary
+              <option>Iceland
+              <option>India
+              <option>Indonesia
+              <option>Iran
+              <option>Iraq
+              <option>Ireland
+              <option>Israel
+              <option>Italy
+              <option>Jamaica
+              <option>Japan
+              <option>Jordan
+              <option>Kazakhstan
+              <option>Kenya
+              <option>Kiribati
+              <option>Kuwait
+              <option>Kyrgyzstan
+              <option>Laos
+              <option>Latvia
+              <option>Lebanon
+              <option>Lesotho
+              <option>Liberia
+              <option>Libya
+              <option>Liechtenstein
+              <option>Lithuania
+              <option>Luxembourg
+              <option>Madagascar
+              <option>Malawi
+              <option>Malaysia
+              <option>Maldives
+              <option>Mali
+              <option>Malta
+              <option>Marshall Islands
+              <option>Mauritania
+              <option>Mauritius
+              <option>Mexico
+              <option>Micronesia
+              <option>Moldova
+              <option>Monaco
+              <option>Mongolia
+              <option>Montenegro
+              <option>Morocco
+              <option>Mozambique
+              <option>Myanmar
+              <option>Namibia
+              <option>Nauru
+              <option>Nepal
+              <option>Netherlands
+              <option>New Zealand
+              <option>Nicaragua
+              <option>Niger
+              <option>Nigeria
+              <option>North Korea
+              <option>North Macedonia
+              <option>Norway
+              <option>Oman
+              <option>Pakistan
+              <option>Palau
+              <option>Palestine
+              <option>Panama
+              <option>Papua New Guinea
+              <option>Paraguay
+              <option>Peru
+              <option>Philippines
+              <option>Poland
+              <option>Portugal
+              <option>Qatar
+              <option>Romania
+              <option>Russia
+              <option>Rwanda
+              <option>Saint Kitts and Nevis
+              <option>Saint Lucia
+              <option>Saint Vincent and the Grenadines
+              <option>Samoa
+              <option>San Marino
+              <option>Sao Tome and Principe
+              <option>Saudi Arabia
+              <option>Senegal
+              <option>Serbia
+              <option>Seychelles
+              <option>Sierra Leone
+              <option>Singapore
+              <option>Slovakia
+              <option>Slovenia
+              <option>Solomon Islands
+              <option>Somalia
+              <option>South Africa
+              <option>South Korea
+              <option>South Sudan
+              <option>Spain
+              <option>Sri Lanka
+              <option>Sudan
+              <option>Suriname
+              <option>Sweden
+              <option>Switzerland
+              <option>Syria
+              <option>Tajikistan
+              <option>Tanzania
+              <option>Thailand
+              <option>Timor-Leste
+              <option>Togo
+              <option>Tonga
+              <option>Trinidad and Tobago
+              <option>Tunisia
+              <option>Turkey
+              <option>Turkmenistan
+              <option>Tuvalu
+              <option>Uganda
+              <option>Ukraine
+              <option>United Arab Emirates
+              <option>United Kingdom
+              <option>United States
+              <option>Uruguay
+              <option>Uzbekistan
+              <option>Vanuatu
+              <option>Vatican City
+              <option>Venezuela
+              <option>Vietnam
+              <option>Yemen
+              <option>Zambia
+              <option>Zimbabwe
+              <option>Other
+            </select>
+          </div>
+          <div class="field">
+            <label for="app-email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="app-email" name="email">
+          </div>
+          <div class="field">
+            <label for="app-phone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="app-phone" name="phone">
+          </div>
+          <div class="field full">
+            <label for="app-address" class="form-label">Address</label>
+            <textarea class="form-control" id="app-address" name="address"></textarea>
+          </div>
+        </div>
+      </fieldset>
+
+      
+      <fieldset class="form-card shadow-sm rounded-3" id="academic">
+        <legend><span class="legend-index">B</span> Academic Background</legend>
+        <div class="form-grid">
+          <div class="field">
+            <label for="school" class="form-label">Previous School</label>
+            <input type="text" class="form-control" id="school" name="school">
+          </div>
+          <div class="field">
+            <label for="education-level" class="form-label">Education Level</label>
+            <select class="form-select" id="education-level" name="education-level">
+              <option value="" disabled selected>Select level</option>
+              <option>High School / Secondary</option>
+              <option>Diploma</option>
+              <option>Undergraduate</option>
+              <option>Postgraduate</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="exam-year" class="form-label">Examination Year</label>
+            <input type="number" class="form-control" id="exam-year" name="exam-year" min="1990" max="2030">
+          </div>
+          <div class="field">
+            <label for="certificate" class="form-label">Certificate Type</label>
+            <select class="form-select" id="certificate" name="certificate">
+              <option value="" disabled selected>Select certificate</option>
+              <option>Secondary School Certificate</option>
+              <option>Higher Secondary Certificate</option>
+              <option>International Baccalaureate</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="grades" class="form-label">Grade</label>
+            <input type="text" class="form-control" id="grades" name="grades">
+          </div>
+        </div>
+      </fieldset>
+
+      
+      <fieldset class="form-card shadow-sm rounded-3" id="programme">
+        <legend><span class="legend-index">C</span> Technology Programme Selection</legend>
+
+        <div class="programme-grid">
+          <label class="programme-card">
+            <input type="radio" name="programme" value="btech-computer-science">
+            <span class="programme-card-body">
+              <span class="programme-icon">CS</span>
+              <span class="programme-name">Bachelor of Technology in Computer Science</span>
+              <span class="programme-department">Department of Computer Science</span>
+              <span class="programme-description">Learn programming, databases and the basics of computing systems.</span>
+              <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
+              <span class="select-option">Select programme</span>
+            </span>
+          </label>
+
+          <label class="programme-card">
+            <input type="radio" name="programme" value="btech-information-technology">
+            <span class="programme-card-body">
+              <span class="programme-icon">IT</span>
+              <span class="programme-name">Bachelor of Technology in Information Technology</span>
+              <span class="programme-department">Department of Information Technology</span>
+              <span class="programme-description">Study networks, databases and the tools used to manage information systems.</span>
+              <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
+              <span class="select-option">Select programme</span>
+            </span>
+          </label>
+
+          <label class="programme-card">
+            <input type="radio" name="programme" value="btech-software-engineering">
+            <span class="programme-card-body">
+              <span class="programme-icon">SE</span>
+              <span class="programme-name">Bachelor of Technology in Software Engineering</span>
+              <span class="programme-department">Department of Software Engineering</span>
+              <span class="programme-description">Learn how software is planned, built, tested and maintained in real projects.</span>
+              <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
+              <span class="select-option">Select programme</span>
+            </span>
+          </label>
+
+          <label class="programme-card">
+            <input type="radio" name="programme" value="btech-computer-engineering">
+            <span class="programme-card-body">
+              <span class="programme-icon">CE</span>
+              <span class="programme-name">Bachelor of Technology in Computer Engineering</span>
+              <span class="programme-department">Department of Computer Engineering</span>
+              <span class="programme-description">Work with computer hardware, embedded systems and the software that runs on them.</span>
+              <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
+              <span class="select-option">Select programme</span>
+            </span>
+          </label>
+
+          <label class="programme-card">
+            <input type="radio" name="programme" value="btech-electronics-communication">
+            <span class="programme-card-body">
+              <span class="programme-icon">EC</span>
+              <span class="programme-name">Bachelor of Technology in Electronics and Communication Engineering</span>
+              <span class="programme-department">Department of Electronics and Communication Engineering</span>
+              <span class="programme-description">Study circuits, signals and communication systems used in everyday devices.</span>
+              <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
+              <span class="select-option">Select programme</span>
+            </span>
+          </label>
+
+          <label class="programme-card">
+            <input type="radio" name="programme" value="btech-electrical-engineering">
+            <span class="programme-card-body">
+              <span class="programme-icon">EE</span>
+              <span class="programme-name">Bachelor of Technology in Electrical Engineering</span>
+              <span class="programme-department">Department of Electrical Engineering</span>
+              <span class="programme-description">Learn about circuits, machines, power systems and electrical design.</span>
+              <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
+              <span class="select-option">Select programme</span>
+            </span>
+          </label>
+        </div>
+      </fieldset>
+
+      
+      <div class="form-card">
+        <div class="form-actions d-flex flex-wrap gap-2">
+          <button type="submit" class="btn shadow-sm btn-primary">Submit Application</button>
+        </div>
+      </div>
+
+    </form>
+  </main>
+
+  <footer class="portal-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Massachusetts Institute of Technology. All rights reserved.</p>
+      <p>Your Academic Journey Starts Here.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
