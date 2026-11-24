@@ -61,6 +61,8 @@ Real icons are provided by **Font Awesome Free 6.5.2**. Source links:
   left-to-right scrolling, as requested.
 - The password field has no `name` attribute, so it is never included in the URL
   when the sign-in form navigates.
+- The programme picker uses CSS `:has()` to show diploma or bachelor programmes
+  after an award level is chosen, without JavaScript.
 - The campus photograph is stored locally in `images/campus.jpg`
   (source: Unsplash) so the layout works without an internet connection.
 

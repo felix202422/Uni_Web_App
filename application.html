@@ -335,78 +335,145 @@
       <fieldset class="form-card shadow-sm rounded-3" id="programme">
         <legend><span class="legend-index">C</span> Technology Programme Selection</legend>
 
-        <div class="programme-grid">
-          <label class="programme-card">
-            <input type="radio" name="programme" value="btech-computer-science">
-            <span class="programme-card-body">
-              <span class="programme-icon">CS</span>
-              <span class="programme-name">Bachelor of Technology in Computer Science</span>
-              <span class="programme-department">Department of Computer Science</span>
-              <span class="programme-description">Learn programming, databases and the basics of computing systems.</span>
-              <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
-              <span class="select-option">Select programme</span>
-            </span>
-          </label>
+        <div class="programme-picker">
+          <div class="programme-level-field">
+            <label for="programme-level" class="form-label">Award Level</label>
+            <select class="form-select programme-level" id="programme-level" name="award-level" required>
+              <option value="" disabled selected>Select diploma or bachelor</option>
+              <option value="bachelor">Bachelor</option>
+              <option value="diploma">Diploma</option>
+            </select>
+          </div>
 
-          <label class="programme-card">
-            <input type="radio" name="programme" value="btech-information-technology">
-            <span class="programme-card-body">
-              <span class="programme-icon">IT</span>
-              <span class="programme-name">Bachelor of Technology in Information Technology</span>
-              <span class="programme-department">Department of Information Technology</span>
-              <span class="programme-description">Study networks, databases and the tools used to manage information systems.</span>
-              <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
-              <span class="select-option">Select programme</span>
-            </span>
-          </label>
+          <p class="programme-hint">Choose an award level to see the available programmes.</p>
 
-          <label class="programme-card">
-            <input type="radio" name="programme" value="btech-software-engineering">
-            <span class="programme-card-body">
-              <span class="programme-icon">SE</span>
-              <span class="programme-name">Bachelor of Technology in Software Engineering</span>
-              <span class="programme-department">Department of Software Engineering</span>
-              <span class="programme-description">Learn how software is planned, built, tested and maintained in real projects.</span>
-              <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
-              <span class="select-option">Select programme</span>
-            </span>
-          </label>
+          <div class="programme-panel" data-level="bachelor">
+            <div class="programme-grid">
+              <label class="programme-card">
+                <input type="radio" name="programme" value="btech-computer-science">
+                <span class="programme-card-body">
+                  <span class="programme-icon">CS</span>
+                  <span class="programme-name">Bachelor of Technology in Computer Science</span>
+                  <span class="programme-department">Department of Computer Science</span>
+                  <span class="programme-description">Learn programming, databases and the basics of computing systems.</span>
+                  <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
+                  <span class="select-option">Select programme</span>
+                </span>
+              </label>
 
-          <label class="programme-card">
-            <input type="radio" name="programme" value="btech-computer-engineering">
-            <span class="programme-card-body">
-              <span class="programme-icon">CE</span>
-              <span class="programme-name">Bachelor of Technology in Computer Engineering</span>
-              <span class="programme-department">Department of Computer Engineering</span>
-              <span class="programme-description">Work with computer hardware, embedded systems and the software that runs on them.</span>
-              <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
-              <span class="select-option">Select programme</span>
-            </span>
-          </label>
+              <label class="programme-card">
+                <input type="radio" name="programme" value="btech-information-technology">
+                <span class="programme-card-body">
+                  <span class="programme-icon">IT</span>
+                  <span class="programme-name">Bachelor of Technology in Information Technology</span>
+                  <span class="programme-department">Department of Information Technology</span>
+                  <span class="programme-description">Study networks, databases and the tools used to manage information systems.</span>
+                  <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
+                  <span class="select-option">Select programme</span>
+                </span>
+              </label>
 
-          <label class="programme-card">
-            <input type="radio" name="programme" value="btech-electronics-communication">
-            <span class="programme-card-body">
-              <span class="programme-icon">EC</span>
-              <span class="programme-name">Bachelor of Technology in Electronics and Communication Engineering</span>
-              <span class="programme-department">Department of Electronics and Communication Engineering</span>
-              <span class="programme-description">Study circuits, signals and communication systems used in everyday devices.</span>
-              <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
-              <span class="select-option">Select programme</span>
-            </span>
-          </label>
+              <label class="programme-card">
+                <input type="radio" name="programme" value="btech-software-engineering">
+                <span class="programme-card-body">
+                  <span class="programme-icon">SE</span>
+                  <span class="programme-name">Bachelor of Technology in Software Engineering</span>
+                  <span class="programme-department">Department of Software Engineering</span>
+                  <span class="programme-description">Learn how software is planned, built, tested and maintained in real projects.</span>
+                  <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
+                  <span class="select-option">Select programme</span>
+                </span>
+              </label>
 
-          <label class="programme-card">
-            <input type="radio" name="programme" value="btech-electrical-engineering">
-            <span class="programme-card-body">
-              <span class="programme-icon">EE</span>
-              <span class="programme-name">Bachelor of Technology in Electrical Engineering</span>
-              <span class="programme-department">Department of Electrical Engineering</span>
-              <span class="programme-description">Learn about circuits, machines, power systems and electrical design.</span>
-              <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
-              <span class="select-option">Select programme</span>
-            </span>
-          </label>
+              <label class="programme-card">
+                <input type="radio" name="programme" value="btech-computer-engineering">
+                <span class="programme-card-body">
+                  <span class="programme-icon">CE</span>
+                  <span class="programme-name">Bachelor of Technology in Computer Engineering</span>
+                  <span class="programme-department">Department of Computer Engineering</span>
+                  <span class="programme-description">Work with computer hardware, embedded systems and the software that runs on them.</span>
+                  <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
+                  <span class="select-option">Select programme</span>
+                </span>
+              </label>
+
+              <label class="programme-card">
+                <input type="radio" name="programme" value="btech-electronics-communication">
+                <span class="programme-card-body">
+                  <span class="programme-icon">EC</span>
+                  <span class="programme-name">Bachelor of Technology in Electronics and Communication Engineering</span>
+                  <span class="programme-department">Department of Electronics and Communication Engineering</span>
+                  <span class="programme-description">Study circuits, signals and communication systems used in everyday devices.</span>
+                  <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
+                  <span class="select-option">Select programme</span>
+                </span>
+              </label>
+
+              <label class="programme-card">
+                <input type="radio" name="programme" value="btech-electrical-engineering">
+                <span class="programme-card-body">
+                  <span class="programme-icon">EE</span>
+                  <span class="programme-name">Bachelor of Technology in Electrical Engineering</span>
+                  <span class="programme-department">Department of Electrical Engineering</span>
+                  <span class="programme-description">Learn about circuits, machines, power systems and electrical design.</span>
+                  <span class="programme-details"><span>B.Tech</span><span>4 years</span></span>
+                  <span class="select-option">Select programme</span>
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <div class="programme-panel" data-level="diploma">
+            <div class="programme-grid">
+              <label class="programme-card">
+                <input type="radio" name="programme" value="diploma-computer-science">
+                <span class="programme-card-body">
+                  <span class="programme-icon">DCS</span>
+                  <span class="programme-name">Diploma in Computer Science</span>
+                  <span class="programme-department">Department of Computer Science</span>
+                  <span class="programme-description">Learn programming, databases and basic computer systems.</span>
+                  <span class="programme-details"><span>Diploma</span><span>3 years</span></span>
+                  <span class="select-option">Select programme</span>
+                </span>
+              </label>
+
+              <label class="programme-card">
+                <input type="radio" name="programme" value="diploma-information-technology">
+                <span class="programme-card-body">
+                  <span class="programme-icon">DIT</span>
+                  <span class="programme-name">Diploma in Information Technology</span>
+                  <span class="programme-department">Department of Information Technology</span>
+                  <span class="programme-description">Study computer networks, databases and everyday IT support.</span>
+                  <span class="programme-details"><span>Diploma</span><span>3 years</span></span>
+                  <span class="select-option">Select programme</span>
+                </span>
+              </label>
+
+              <label class="programme-card">
+                <input type="radio" name="programme" value="diploma-electrical-engineering">
+                <span class="programme-card-body">
+                  <span class="programme-icon">DEE</span>
+                  <span class="programme-name">Diploma in Electrical Engineering</span>
+                  <span class="programme-department">Department of Electrical Engineering</span>
+                  <span class="programme-description">Learn wiring, circuits, machines and basic power systems.</span>
+                  <span class="programme-details"><span>Diploma</span><span>3 years</span></span>
+                  <span class="select-option">Select programme</span>
+                </span>
+              </label>
+
+              <label class="programme-card">
+                <input type="radio" name="programme" value="diploma-electronics-communication">
+                <span class="programme-card-body">
+                  <span class="programme-icon">DEC</span>
+                  <span class="programme-name">Diploma in Electronics and Communication</span>
+                  <span class="programme-department">Department of Electronics and Communication Engineering</span>
+                  <span class="programme-description">Study electronic circuits and the basics of communication systems.</span>
+                  <span class="programme-details"><span>Diploma</span><span>3 years</span></span>
+                  <span class="select-option">Select programme</span>
+                </span>
+              </label>
+            </div>
+          </div>
         </div>
       </fieldset>
 

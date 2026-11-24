@@ -656,6 +656,56 @@ textarea:focus-visible,
 }
 
 
+.programme-level-field {
+  margin: 18px 22px 0;
+}
+
+.programme-level {
+  max-width: 320px;
+}
+
+.programme-hint {
+  display: none;
+  margin: 14px 22px 0;
+  padding: 10px 12px;
+  border-left: 3px solid var(--udom-blue);
+  background: var(--soft-blue);
+  color: var(--udom-navy);
+  font-size: 13px;
+}
+
+.programme-panel {
+  display: none;
+}
+
+.programme-panel[data-level="bachelor"] {
+  display: block;
+}
+
+.programme-picker:has(.programme-level option[value=""]:checked) .programme-panel {
+  display: none;
+}
+
+.programme-picker:has(.programme-level option[value=""]:checked) .programme-hint {
+  display: block;
+}
+
+.programme-picker:has(.programme-level option[value="diploma"]:checked) .programme-panel[data-level="bachelor"] {
+  display: none;
+}
+
+.programme-picker:has(.programme-level option[value="diploma"]:checked) .programme-panel[data-level="diploma"] {
+  display: block;
+}
+
+.programme-picker:has(.programme-level option[value="bachelor"]:checked) .programme-panel[data-level="bachelor"] {
+  display: block;
+}
+
+.programme-picker:has(.programme-level option[value="bachelor"]:checked) .programme-panel[data-level="diploma"] {
+  display: none;
+}
+
 .programme-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
