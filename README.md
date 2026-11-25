@@ -28,7 +28,7 @@ UniApply/
 ├── style.css
 ├── images/
 │   ├── campus.jpg
-│   └── favicon.png
+│   └── DARCITY.jpg
 └── README.md
 ```
 
