@@ -554,27 +554,27 @@
         <div class="step-progress-item"><a class="step-progress-link" href="#step-confirmation" aria-label="Confirmation"><span class="step-progress-title">Confirmation</span></a></div>
       </div>
 
-      <p class="step-note">Use Back to revisit a step and change an answer. This review cannot display your earlier values together.</p>
+      <p class="step-note">Your answers from the earlier steps are shown below exactly as you entered them. They are not saved; they remain only while this page is open. Use Back to change an answer.</p>
 
       <section class="review-card" aria-labelledby="review-heading">
         <div class="review-card-header" id="review-heading">Static Flow Status</div>
 
         <div class="review-row">
           <div class="review-label">Personal Information</div>
-          <div class="review-value">Completed on Step 1 in your browser, but this page cannot read the entered values back.</div>
-          <b class="status-pill status-pending review-status">NEEDS VERIFICATION</b>
+          <div class="review-value">Your Step 1 entries are shown below in the live form controls.</div>
+          <b class="status-pill status-done review-status">DONE</b>
         </div>
 
         <div class="review-row">
           <div class="review-label">Academic Background</div>
-          <div class="review-value">Completed on Step 2 in your browser, but this page cannot read the entered values back.</div>
-          <b class="status-pill status-pending review-status">NEEDS VERIFICATION</b>
+          <div class="review-value">Your Step 2 entries are shown below in the live form controls.</div>
+          <b class="status-pill status-done review-status">DONE</b>
         </div>
 
         <div class="review-row">
           <div class="review-label">Programme Selection</div>
-          <div class="review-value">A programme was chosen on Step 3. Without storage, this page cannot display which one.</div>
-          <b class="status-pill status-pending review-status">NEEDS VERIFICATION</b>
+          <div class="review-value">Your award level and selected programme are shown below.</div>
+          <b class="status-pill status-done review-status">DONE</b>
         </div>
 
         <div class="review-row">
@@ -598,6 +598,15 @@
       </div>
     </section>
 
+    <div class="review-actions" aria-label="Review actions">
+      <div class="step-actions">
+        <a class="btn shadow-sm btn-outline-secondary" href="#step-programme">Back</a>
+        <div class="step-actions-end">
+          <a class="btn shadow-sm btn-primary" href="#step-confirmation">Continue to Confirmation</a>
+        </div>
+      </div>
+    </div>
+
     <!-- STEP 5: CONFIRMATION -->
     <section class="step-panel" id="step-confirmation">
       <section class="page-intro">
@@ -620,8 +629,8 @@
 
         <div class="review-row">
           <div class="review-label">Answers</div>
-          <div class="review-value">Earlier answers were checked by your browser, but this static flow could not save or display them together.</div>
-          <b class="status-pill status-pending review-status">NEEDS VERIFICATION</b>
+          <div class="review-value">Your answers were displayed on the Review step, but no application record was saved.</div>
+          <b class="status-pill status-done review-status">DONE</b>
         </div>
 
         <div class="review-row">

@@ -868,6 +868,9 @@ body:has(#step-personal:target) #step-personal,
 body:has(#step-academic:target):not(:has(#step-personal input:invalid, #step-personal select:invalid, #step-personal textarea:invalid)) #step-academic,
 body:has(#step-programme:target):not(:has(#step-personal input:invalid, #step-personal select:invalid, #step-personal textarea:invalid)):not(:has(#step-academic input:invalid, #step-academic select:invalid, #step-academic textarea:invalid)) #step-programme,
 body:has(#step-review:target):not(:has(#step-personal input:invalid, #step-personal select:invalid, #step-personal textarea:invalid)):not(:has(#step-academic input:invalid, #step-academic select:invalid, #step-academic textarea:invalid)):not(:has(#step-programme input:invalid, #step-programme select:invalid, #step-programme textarea:invalid)) #step-review,
+body:has(#step-review:target):not(:has(input:invalid, select:invalid, textarea:invalid)) #step-personal,
+body:has(#step-review:target):not(:has(input:invalid, select:invalid, textarea:invalid)) #step-academic,
+body:has(#step-review:target):not(:has(input:invalid, select:invalid, textarea:invalid)) #step-programme,
 body:has(#step-confirmation:target):not(:has(#step-personal input:invalid, #step-personal select:invalid, #step-personal textarea:invalid)):not(:has(#step-academic input:invalid, #step-academic select:invalid, #step-academic textarea:invalid)):not(:has(#step-programme input:invalid, #step-programme select:invalid, #step-programme textarea:invalid)) #step-confirmation,
 body:has(#step-locked:target) #step-locked,
 body:has(#step-academic:target):has(#step-personal input:invalid, #step-personal select:invalid, #step-personal textarea:invalid) #step-locked,
@@ -875,6 +878,60 @@ body:has(#step-programme:target):has(#step-personal input:invalid, #step-persona
 body:has(#step-review:target):has(#step-personal input:invalid, #step-personal select:invalid, #step-personal textarea:invalid, #step-academic input:invalid, #step-academic select:invalid, #step-academic textarea:invalid, #step-programme input:invalid, #step-programme select:invalid, #step-programme textarea:invalid) #step-locked,
 body:has(#step-confirmation:target):has(#step-personal input:invalid, #step-personal select:invalid, #step-personal textarea:invalid, #step-academic input:invalid, #step-academic select:invalid, #step-academic textarea:invalid, #step-programme input:invalid, #step-programme select:invalid, #step-programme textarea:invalid) #step-locked {
   display: block;
+}
+
+.review-actions {
+  display: none;
+}
+
+body:has(#step-review:target):not(:has(input:invalid, select:invalid, textarea:invalid)) .portal-main {
+  display: flex;
+  flex-direction: column;
+}
+
+body:has(#step-review:target):not(:has(input:invalid, select:invalid, textarea:invalid)) #step-review {
+  order: 0;
+}
+
+body:has(#step-review:target):not(:has(input:invalid, select:invalid, textarea:invalid)) #step-personal {
+  order: 1;
+}
+
+body:has(#step-review:target):not(:has(input:invalid, select:invalid, textarea:invalid)) #step-academic {
+  order: 2;
+}
+
+body:has(#step-review:target):not(:has(input:invalid, select:invalid, textarea:invalid)) #step-programme {
+  order: 3;
+}
+
+body:has(#step-review:target):not(:has(input:invalid, select:invalid, textarea:invalid)) .review-actions {
+  order: 4;
+  display: block;
+}
+
+body:has(#step-review:target):not(:has(input:invalid, select:invalid, textarea:invalid)) #step-review > .step-actions,
+body:has(#step-review:target):not(:has(input:invalid, select:invalid, textarea:invalid)) #step-personal .page-intro,
+body:has(#step-review:target):not(:has(input:invalid, select:invalid, textarea:invalid)) #step-personal .step-progress,
+body:has(#step-review:target):not(:has(input:invalid, select:invalid, textarea:invalid)) #step-personal .step-actions,
+body:has(#step-review:target):not(:has(input:invalid, select:invalid, textarea:invalid)) #step-academic .page-intro,
+body:has(#step-review:target):not(:has(input:invalid, select:invalid, textarea:invalid)) #step-academic .step-progress,
+body:has(#step-review:target):not(:has(input:invalid, select:invalid, textarea:invalid)) #step-academic .step-actions,
+body:has(#step-review:target):not(:has(input:invalid, select:invalid, textarea:invalid)) #step-programme .page-intro,
+body:has(#step-review:target):not(:has(input:invalid, select:invalid, textarea:invalid)) #step-programme .step-progress,
+body:has(#step-review:target):not(:has(input:invalid, select:invalid, textarea:invalid)) #step-programme .step-actions,
+body:has(#step-review:target):not(:has(input:invalid, select:invalid, textarea:invalid)) #step-programme .step-note {
+  display: none;
+}
+
+body:has(#step-review:target):not(:has(input:invalid, select:invalid, textarea:invalid)) #step-personal,
+body:has(#step-review:target):not(:has(input:invalid, select:invalid, textarea:invalid)) #step-academic,
+body:has(#step-review:target):not(:has(input:invalid, select:invalid, textarea:invalid)) #step-programme {
+  margin-bottom: 22px;
+}
+
+body:has(#step-review:target):not(:has(input:invalid, select:invalid, textarea:invalid)) .step-form {
+  pointer-events: none;
 }
 
 .continue-link,
@@ -1095,6 +1152,11 @@ body:not(:has(#step-personal input:invalid, #step-personal select:invalid, #step
 
 .status-pending {
   background: #b45309;
+  color: var(--white);
+}
+
+.status-done {
+  background: #15803d;
   color: var(--white);
 }
 
