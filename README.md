@@ -1,4 +1,4 @@
-# Massachusetts Institute of Technology — Online Application System
+# DarCity University — Online Application System
 
 A responsive university application portal interface styled after the official
 online application systems used by universities such as UDOM: institutional
